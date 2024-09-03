@@ -7,10 +7,6 @@
   </head>
 
   <body>
-    <!-- Поменять порядок отображения в разметке h1 поставить после header -->
-    <h1 class="bold-text-xl">
-      Гостиницы Седоны <span class="vissually-hidden">(каталог)</span>
-    </h1>
     <header class="main-header">
       <a href="index.html" class="main-logo">
         <img src="#" alt="Логотип сайта города Седона" class="main-logo__img">
@@ -41,6 +37,9 @@
       </ul>
     </header>
     <main class="main-inner">
+      <h1 class="bold-text-extralarge">
+        Гостиницы Седоны <span class="vissually-hidden">(каталог)</span>
+      </h1>
       <ol class="breadcrambs">
         <li class="breadcrambs__item">
           <a href="index.html" class="breadcrambs__icon">
@@ -95,7 +94,7 @@
           <button type="submit">Применить</button>
           <button type="reset">Сбросить</button>
         </form>
-        <p class="bold-text-l">Найдено гостиниц: 38</p>
+        <p class="bold-text-large">Найдено гостиниц: 38</p>
         <select class="catalog__select" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -125,7 +124,9 @@
             <p class="blocks-text">От 4000 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <div class='stars'></div>
+            <p class='stars'>
+              <span class='vissually-hidden'>Гостиница 4 звезды</span>
+            </p>
             <p class="card__rating">Рейтинг: 8,5</p>
           </li>
           <li class="card">
@@ -137,7 +138,9 @@
             <button class="card__button card__button_favorites" type="button">
               В избранном
             </button>
-            <div class='stars'></div>
+            <p class='stars'>
+              <span class='vissually-hidden'>Гостиница 4 звезды</span>
+            </p>
             <p class="card__rating">Рейтинг: 9,2</p>
           </li>
           <li class="card">
@@ -147,7 +150,9 @@
             <p class="blocks-text">От 2500 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <div class='stars'></div>
+            <p class='stars'>
+              <span class='vissually-hidden'>Гостиница 3 звезды</span>
+            </p>
             <p class="card__rating">Рейтинг: 6,9</p>
           </li>
           <li class="card">
@@ -157,7 +162,9 @@
             <p class="blocks-text">От 1500 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <div class='stars'></div>
+            <p class='stars'>
+              <span class='vissually-hidden'>Гостиница 2 звезды</span>
+            </p>
             <p class="card__rating">Рейтинг: 5,0</p>
           </li>
         </ul>
@@ -187,7 +194,7 @@
     <footer class="main-footer">
       <section class="subscribe">
         <h2 class="vissually-hidden">Подписка на рассылку</h2>
-        <p class="bold-text-l">Подпишитесь на рассылку</p>
+        <p class="bold-text-large">Подпишитесь на рассылку</p>
         <p class="basic-text">
           Только полезная информация и никакого спама,<br>
           честное бойскаутское!
