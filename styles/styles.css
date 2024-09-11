@@ -1,0 +1,214 @@
+:root {
+  --text-color_basic: #000000;
+  --text-color_second: #333333;
+  --text-color_error: #ff5757;
+  --text-color_hover: #756157;
+  --text-color_active: rgba(117, 97, 87, 0.3);
+  --text-color_on-background: #ffffff;
+  --text-color_on-background-small: rgba(255, 255, 255, 0.3);
+  --text-color_on-background-hover: rgba(255, 255, 255, 0.6);
+  --text-color_on-background-active: rgba(255, 255, 255, 0.3);
+  --buttons-color_basic: #756157;
+  --buttons-color_basic-hover: #615048;
+  --buttons-color_second: #82B3D3;
+  --buttons-color_second-hover: #68A2CA;
+  --buttons-color_select: #7DB54F;
+  --buttons-color_select-hover: #6C9E42;
+  --buttons-color_disabled: #e5e5e5;
+  --background-color_basic: #82B3D3;
+  --background-color_second-1: rgba(131, 179, 211, 0.12);
+  --background-color_second-2: rgba(131, 179, 211, 0.2);
+  --icon-color_basic: #000000;
+  --icon-color_second: #83B3D3;
+  --icon-color_second-hover: #68A2CA;
+  --icon-color_second-active: rgba(104, 162, 202, 0.3);
+  --inputs-color: #3F5E72;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  color: var(--text-color_basic);
+}
+
+.main-header {}
+
+.main-logo {}
+
+.main-logo__img {}
+
+.main-nav {}
+
+.main-nav__list {}
+
+.main-nav__item {}
+
+.main-nav__link {}
+
+.custom-menu {}
+
+.custom-menu__item {}
+
+.custom-menu__search-btn {}
+
+.custom-menu__favorites-btn {}
+
+.custom-menu__btn {}
+
+.main {}
+
+.banner {}
+
+.visually-hidden {}
+
+.banner__wellcome-text {}
+
+.advantages {}
+
+.bold-text-large {}
+
+.basic-text {}
+
+.advantages__list {}
+
+.advantages__item {}
+
+.bold-text-medium {}
+
+.inverse-text {}
+
+.blocks-text {}
+
+.advantages-img {}
+
+.services {}
+
+.services__list {}
+
+.services__item {}
+
+.hotel-search {}
+
+.hotel-search__button {}
+
+.main-footer {}
+
+.subscribe {}
+
+.subscribe__form {}
+
+.socials {}
+
+.socials__item {}
+
+.socials__link {}
+
+.tel {}
+
+.main-footer__logo-link {}
+
+.main-footer__logo {}
+
+.hotel-search-modal {}
+
+.hotel-search-modal__close-button {}
+
+/* Классы catalog.html */
+.main-inner {}
+
+.catalog {}
+
+.catalog__header {}
+
+.bold-text-extralarge {}
+
+.visually-hidden {}
+
+.breadcrambs {}
+
+.breadcrambs__item {}
+
+.breadcrambs__icon {}
+
+.breadcrambs__link {}
+
+.catalog-filter {}
+
+.catalog-filter__fieldset {}
+
+.catalog-filter__legend {}
+
+.catalog-filter__label {}
+
+.range {}
+
+.bold-text-large {}
+
+.catalog__select {}
+
+.cards-view {}
+
+.cards-view__item {}
+
+.cards-view__button {}
+
+.cards {}
+
+.card {}
+
+.card__img {}
+
+.card__heading {}
+
+.blocks-text {}
+
+.card__link {}
+
+.card__button {}
+
+.stars {}
+
+.card__rating {}
+
+.card__button_favorites {}
+
+.pagination {}
+
+.pagination__item {}
+
+.pagination__link {}
+
+.pagination__link_current {}

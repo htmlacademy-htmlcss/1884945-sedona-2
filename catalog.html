@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="images/favicons/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -41,14 +42,14 @@
     </header>
     <main class="main-inner">
       <section class="catalog">
-        <header class='catalog__header'>
+        <header class="catalog__header">
           <h1 class="bold-text-extralarge">
-            Гостиницы Седоны <span class="vissually-hidden">(каталог)</span>
+            Гостиницы Седоны <span class="visually-hidden">(каталог)</span>
           </h1>
           <ol class="breadcrambs">
             <li class="breadcrambs__item">
               <a href="index.html" class="breadcrambs__icon">
-                <span class="vissually-hidden">Главная</span>
+                <span class="visually-hidden">Главная</span>
               </a>
             </li>
             <li class="breadcrambs__item">
@@ -58,12 +59,12 @@
           <form action="https://echo.htmlacademy.ru" class="catalog-filter" method="get">
             <fieldset class="catalog-filter__fieldset">
               <legend class="catalog-filter__legend">Инфраструктура:</legend>
-              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id='waterpool'
-                  value='waterpool' checked>Бассейн</label>
-              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id='parking'
-                  value='parking' checked>Парковка</label>
-              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id='wifi'
-                  value='wifi'>Wi-Fi</label>
+              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id="waterpool"
+                  value="waterpool" checked>Бассейн</label>
+              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id="parking"
+                  value="parking" checked>Парковка</label>
+              <label class="catalog-filter__label"><input type="checkbox" name="infrastructure" id="wifi"
+                  value="wifi">Wi-Fi</label>
             </fieldset>
             <fieldset class="catalog-filter__fieldset">
               <legend class="catalog-filter__legend">Тип жилья:</legend>
@@ -90,7 +91,7 @@
                 <input type="number" id="finish-price" name="finish-price">
                 до
               </label>
-              <div class='range'></div>
+              <div class="range"></div>
             </fieldset>
             <button type="submit">Применить</button>
             <button type="reset">Сбросить</button>
@@ -103,17 +104,17 @@
           <ul class="cards-view">
             <li class="cards-view__item">
               <button class="cards-view__button" type="button">
-                <span class="vissually-hidden">Вид: обычные значки</span>
+                <span class="visually-hidden">Вид: обычные значки</span>
               </button>
             </li>
             <li class="cards-view__item">
               <button class="cards-view__button" type="button">
-                <span class="vissually-hidden">Вид: Крупные значки</span>
+                <span class="visually-hidden">Вид: Крупные значки</span>
               </button>
             </li>
             <li class="cards-view__item">
               <button class="cards-view__button" type="button">
-                <span class="vissually-hidden">Вид: таблица</span>
+                <span class="visually-hidden">Вид: таблица</span>
               </button>
             </li>
           </ul>
@@ -126,8 +127,8 @@
             <p class="blocks-text">От 4000 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <p class='stars'>
-              <span class='vissually-hidden'>Гостиница 4 звезды</span>
+            <p class="stars">
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="card__rating">Рейтинг: 8,5</p>
           </li>
@@ -140,8 +141,8 @@
             <button class="card__button card__button_favorites" type="button">
               В избранном
             </button>
-            <p class='stars'>
-              <span class='vissually-hidden'>Гостиница 4 звезды</span>
+            <p class="stars">
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="card__rating">Рейтинг: 9,2</p>
           </li>
@@ -152,8 +153,8 @@
             <p class="blocks-text">От 2500 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <p class='stars'>
-              <span class='vissually-hidden'>Гостиница 3 звезды</span>
+            <p class="stars">
+              <span class="visually-hidden">Гостиница 3 звезды</span>
             </p>
             <p class="card__rating">Рейтинг: 6,9</p>
           </li>
@@ -164,8 +165,8 @@
             <p class="blocks-text">От 1500 р</p>
             <a class="card__link">Подробнее</a>
             <button class="card__button" type="button">В избранное</button>
-            <p class='stars'>
-              <span class='vissually-hidden'>Гостиница 2 звезды</span>
+            <p class="stars">
+              <span class="visually-hidden">Гостиница 2 звезды</span>
             </p>
             <p class="card__rating">Рейтинг: 5,0</p>
           </li>
@@ -195,14 +196,14 @@
 
     <footer class="main-footer">
       <section class="subscribe">
-        <h2 class="vissually-hidden">Подписка на рассылку</h2>
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="bold-text-large">Подпишитесь на рассылку</p>
         <p class="basic-text">
           Только полезная информация и никакого спама,<br>
           честное бойскаутское!
         </p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="email" class="vissually-hidden">email</label>
+          <label for="email" class="visually-hidden">email</label>
           <input type="email" name="email" id="email" required>
           <button type="submit">Подписаться</button>
         </form>
@@ -210,17 +211,17 @@
       <ul class="socials">
         <li class="socials__item">
           <a href="https://vk.com/htmlacademy" class="socials__link">
-            <span class='vissually-hidden'>Вконтакте</span>
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="socials__item">
           <a href="https://t.me/htmlacademy" class="socials__link">
-            <span class='vissually-hidden'>Телеграм</span>
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="socials__item">
           <a href="https://www.youtube.com/user/htmlacademyru" class="socials__link">
-            <span class='vissually-hidden'>Youtube</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
