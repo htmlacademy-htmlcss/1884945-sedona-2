@@ -69,24 +69,43 @@ body {
   color: var(--text-color_basic);
 }
 
-.main-header {}
+.main-header {
+  display: flex;
+  padding: 0 70px;
+  margin-bottom: -6px;
+}
 
 .main-logo {}
 
-.main-logo__img {}
+.main-logo__img {
+  display: block;
+  margin-right: 29px;
+}
 
-.main-nav {}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  height: 64px;
+  margin-right: auto;
+}
 
 .main-nav__list {
+  display: flex;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
-.main-nav__item {}
+.main-nav__item {
+  display: flex;
+  padding: 0 16px;
+}
 
 .main-nav__link {
+  display: flex;
+  align-items: center;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -94,20 +113,50 @@ body {
   text-decoration: none;
 }
 
+.main-nav__link_current {
+  border-bottom: solid 2px var(--buttons-color_basic);
+}
+
 .custom-menu {
+  display: flex;
+  align-items: center;
+  height: 64px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.custom-menu__item {}
+.custom-menu__item {
+  padding: 0 12px;
+}
 
-.custom-menu__search-btn {}
+.custom-menu__item:last-child {
+  margin-left: 20px;
+  padding: 0;
+}
 
-.custom-menu__favorites-btn {}
+.custom-menu__search-btn {
+  display: block;
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../images/main-header/custom-menu/search-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.custom-menu__favorites-btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../images/main-header/custom-menu/favourites-icon.svg");
+  background-repeat: no-repeat;
+}
 
 .custom-menu__btn {
+  padding: 8px 34px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -115,35 +164,52 @@ body {
   text-transform: uppercase;
 
   background-color: var(--buttons-color_basic);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .main {}
 
 .banner {
+  padding-top: 51px;
+  margin-bottom: 69px;
+  min-height: 485px;
+
   background-color: var(--background-color_second-2);
   background-image: url("../images/banner/banner-background.jpg");
   background-repeat: no-repeat;
 }
 
-.banner__wellcome-text {}
+.banner__wellcome-text {
+  display: block;
+  margin: 0 auto;
+}
 
 .advantages {}
 
 .bold-text-large {
+  margin: 0 0 26px;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .basic-text {
-  font-size: 16px;
-  line-height: 20px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
   color: var(--text-color_second);
+  text-align: center;
 }
 
 .advantages__list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 90px 0 0 0;
   padding: 0;
 
   list-style: none;
@@ -181,7 +247,9 @@ body {
   color: var(--text-color_on-background);
 }
 
-.advantages-img {}
+.advantages-img {
+  display: block;
+}
 
 .services {}
 
