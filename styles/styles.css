@@ -323,26 +323,42 @@ body {
   background-repeat: no-repeat;
   background-position: center 81px;
 
-  &:nth-child(1) {
-    background-image: url(../images/services/housing-icon.svg);
-  }
-
-  &:nth-child(2) {
-    background-image: url(../images/services/food-icon.svg);
-  }
-
-  &:nth-child(3) {
-    background-image: url(../images/services/souvenirs-icon.svg);
-  }
-
   &:nth-child(odd) {
     background-color: var(--background-color_second-1);
   }
 }
 
-.hotel-search {}
+.services__item_housing {
+  background-image: url(../images/services/housing-icon.svg);
+}
+
+.services__item_food {
+  background-image: url(../images/services/food-icon.svg);
+}
+
+.services__item_souvenirs {
+  background-image: url(../images/services/souvenirs-icon.svg);
+}
+
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 96px;
+
+  & .bold-text-large {
+    margin: 0 0 20px;
+  }
+
+  & .basic-text {
+    margin: 0 0 54px;
+  }
+}
 
 .hotel-search__button {
+  padding: 8px 50px;
+
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -350,11 +366,25 @@ body {
   text-transform: uppercase;
 
   background-color: var(--buttons-color_basic);
+  border-radius: 4px;
 }
 
 .main-footer {}
 
-.subscribe {}
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+
+  & .bold-text-large {
+    margin: 0 0 20px;
+  }
+
+  & .basic-text {
+    margin: 0 0 54px;
+  }
+}
 
 .subscribe_with-background {
   background-color: var(--background-color_second-2);
@@ -362,9 +392,28 @@ body {
   background-repeat: no-repeat;
 }
 
-.subscribe__form {}
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 104px;
+}
+
+.subscribe__input {
+  padding: 14px 20px;
+  width: 452px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 
 .subscribe__button {
+  padding: 8px 0;
+  width: 232px;
+
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -373,9 +422,20 @@ body {
 
   background-color: var(--buttons-color_second);
   border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.main-footer__bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 15px 70px 0;
 }
 
 .socials {
+  display: flex;
   margin: 0;
   padding: 0;
 
@@ -384,7 +444,26 @@ body {
 
 .socials__item {}
 
-.socials__link {}
+.socials__link {
+  display: block;
+  width: 48px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.socials__link_vk {
+  background-image: url(../images/main-footer/socials/vk-icon.svg);
+}
+
+.socials__link_tg {
+  background-image: url(../images/main-footer/socials/tg-icon.svg);
+}
+
+.socials__link_youtube {
+  background-image: url(../images/main-footer/socials/youtube-icon.svg);
+}
 
 .socials__icon {}
 
