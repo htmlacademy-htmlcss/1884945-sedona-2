@@ -1,28 +1,28 @@
 :root {
-  --text-color_basic: #000000;
-  --text-color_second: #333333;
-  --text-color_error: #ff5757;
-  --text-color_hover: #756157;
-  --text-color_active: rgba(117, 97, 87, 0.3);
-  --text-color_on-background: #ffffff;
-  --text-color_on-background-small: rgba(255, 255, 255, 0.3);
-  --text-color_on-background-hover: rgba(255, 255, 255, 0.6);
-  --text-color_on-background-active: rgba(255, 255, 255, 0.3);
-  --buttons-color_basic: #756157;
-  --buttons-color_basic-hover: #615048;
-  --buttons-color_second: #82B3D3;
-  --buttons-color_second-hover: #68A2CA;
-  --buttons-color_select: #7DB54F;
-  --buttons-color_select-hover: #6C9E42;
-  --buttons-color_disabled: #e5e5e5;
-  --background-color_basic: #82B3D3;
-  --background-color_second-1: rgba(131, 179, 211, 0.12);
-  --background-color_second-2: rgba(131, 179, 211, 0.2);
-  --icon-color_basic: #000000;
-  --icon-color_second: #83B3D3;
-  --icon-color_second-hover: #68A2CA;
-  --icon-color_second-active: rgba(104, 162, 202, 0.3);
-  --inputs-color: #3F5E72;
+  --text-color-basic: #000000;
+  --text-color-second: #333333;
+  --text-color-error: #ff5757;
+  --text-color-hover: #756157;
+  --text-color-active: rgba(117, 97, 87, 0.3);
+  --text-color-on-background: #ffffff;
+  --text-color-on-background-small: rgba(255, 255, 255, 0.3);
+  --text-color-on-background-hover: rgba(255, 255, 255, 0.6);
+  --text-color-on-background-active: rgba(255, 255, 255, 0.3);
+  --buttons-color-basic: #756157;
+  --buttons-color-basic-hover: #615048;
+  --buttons-color-second: #82b3d3;
+  --buttons-color-second-hover: #68a2ca;
+  --buttons-color-select: #7db54f;
+  --buttons-color-select-hover: #6c9e42;
+  --buttons-color-disabled: #e5e5e5;
+  --background-color-basic: #82b3d3;
+  --background-color-second-1: rgba(131, 179, 211, 0.12);
+  --background-color-second-2: rgba(131, 179, 211, 0.2);
+  --icon-color-basic: #000000;
+  --icon-color-second: #83b3d3;
+  --icon-color-second-hover: #68a2ca;
+  --icon-color-second-active: rgba(104, 162, 202, 0.3);
+  --inputs-color: #3f5e72;
   --forms-elements-1: #e5e5e5;
   --forms-elements-2: #f2f2f2;
 }
@@ -43,7 +43,9 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -73,7 +75,7 @@ body {
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
-  color: var(--text-color_basic);
+  color: var(--text-color-basic);
 }
 
 .main-header {
@@ -116,12 +118,12 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: var(--text-color_basic);
+  color: var(--text-color-basic);
   text-decoration: none;
 }
 
 .main-nav__link_current {
-  border-bottom: solid 2px var(--buttons-color_basic);
+  border-bottom: solid 2px var(--buttons-color-basic);
 }
 
 .custom-menu {
@@ -167,10 +169,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_basic);
+  background-color: var(--buttons-color-basic);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -185,7 +187,7 @@ body {
   margin-bottom: 69px;
   min-height: 485px;
 
-  background-color: var(--background-color_second-2);
+  background-color: var(--background-color-second-2);
   background-image: url("../images/banner/banner-background.jpg");
   background-repeat: no-repeat;
 }
@@ -219,7 +221,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  color: var(--text-color_second);
+  color: var(--text-color-second);
   text-align: center;
 }
 
@@ -251,11 +253,11 @@ body {
   }
 
   &:nth-child(odd) {
-    background-color: var(--background-color_second-2);
+    background-color: var(--background-color-second-2);
   }
 
   &:nth-child(even) {
-    background-color: var(--background-color_second-1);
+    background-color: var(--background-color-second-1);
   }
 
   &:first-child,
@@ -264,7 +266,7 @@ body {
     height: 385px;
     padding: 0;
 
-    background-color: var(--background-color_basic);
+    background-color: var(--background-color-basic);
 
     & p {
       max-width: 400px;
@@ -283,11 +285,11 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: var(--text-color_second);
+  color: var(--text-color-second);
 }
 
 .inverse-text {
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
 }
 
 .advantages-img {
@@ -334,7 +336,7 @@ body {
   background-position: center 81px;
 
   &:nth-child(odd) {
-    background-color: var(--background-color_second-1);
+    background-color: var(--background-color-second-1);
   }
 }
 
@@ -372,10 +374,10 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_basic);
+  background-color: var(--buttons-color-basic);
   border-radius: 4px;
 }
 
@@ -397,7 +399,7 @@ body {
 }
 
 .subscribe_with-background {
-  background-color: var(--background-color_second-2);
+  background-color: var(--background-color-second-2);
   background-image: url("../images/subscribe/subscribe-background.jpg");
   background-repeat: no-repeat;
 }
@@ -431,10 +433,10 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_second);
+  background-color: var(--buttons-color-second);
   border: none;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -484,7 +486,7 @@ body {
 .tel {
   font-size: 40px;
   line-height: 40px;
-  color: var(--text-color_basic);
+  color: var(--text-color-basic);
   text-decoration: none;
 }
 
@@ -505,7 +507,7 @@ body {
   padding: 35px 70px 0;
   height: 412px;
 
-  background-color: var(--background-color_basic);
+  background-color: var(--background-color-basic);
   background-image: url("../images/catalog/catalog-header/catalog-header-background.jpg");
   background-repeat: no-repeat;
 }
@@ -578,10 +580,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_second);
+  background-color: var(--buttons-color-second);
   border: none;
   border-radius: 4px;
 }
@@ -611,7 +613,7 @@ body {
 
   font-size: 18px;
   line-height: 21px;
-  color: var(--text-color_second);
+  color: var(--text-color-second);
 
   background-color: transparent;
   border: 2px solid var(--forms-elements-1);
@@ -643,7 +645,7 @@ body {
 }
 
 .cards-view__button_current {
-  border: 2px solid var(--icon-color_basic);
+  border: 2px solid var(--icon-color-basic);
 }
 
 .cards-view__button_regular {
@@ -698,10 +700,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_basic);
+  background-color: var(--buttons-color-basic);
   border-radius: 4px;
 }
 
@@ -712,16 +714,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_second);
+  background-color: var(--buttons-color-second);
   border: none;
   border-radius: 4px;
 }
 
 .card__button_selected {
-  background-color: var(--buttons-color_select);
+  background-color: var(--buttons-color-select);
 }
 
 .stars {}
@@ -729,7 +731,7 @@ body {
 .card__rating {
   font-size: 16px;
   line-height: 20px;
-  color: var(--text-color_second);
+  color: var(--text-color-second);
 }
 
 .pagination {
@@ -753,22 +755,22 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: var(--text-color_on-background);
+  color: var(--text-color-on-background);
   text-transform: uppercase;
 
-  background-color: var(--buttons-color_second);
+  background-color: var(--buttons-color-second);
   border: none;
   border-radius: 4px;
 }
 
 .pagination__link_current {
-  color: var(--text-color_basic);
+  color: var(--text-color-basic);
 
   background-color: var(--forms-elements-2);
 }
 
 .pagination__link_separator {
-  color: var(--text-color_basic);
+  color: var(--text-color-basic);
 
   background-color: transparent;
 }
