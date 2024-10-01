@@ -196,23 +196,32 @@
         </a>
       </div>
     </footer>
-    <div class="hotel-search-modal visually-hidden">
-      <p class="bold-text-large">Поиск гостиницы в Седоне</p>
-      <button class="hotel-search-modal__close-button" type="button">
-        Закрыть
-      </button>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="check-in-date">Дата заезда:</label>
-        <input type="date" name="check-in-date" id="check-in-date">
-        <label for="departure-date">Дата выезда:</label>
-        <input type="date" name="departure-date" id="departure-date">
-        <label for="number-of-adults">Взрослые:</label>
-        <input type="number" id="number-of-adults" name="number-of-adults">
-        <label for="number-of-adults">Дети:</label>
-        <input type="number" id="number-of-childrens" name="number-of-childrens">
-        <button type="submit">Найти</button>
-      </form>
+    <div class="modal-container visually-hidden">
+      <div class="modal">
+        <p class="bold-text-large">Поиск гостиницы в Седоне</p>
+        <button class="modal__close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="modal-form__date-label" for="check-in-date">Дата заезда:</label>
+          <input class="modal-form__date-input" type="date" name="check-in-date" id="check-in-date">
+          <label class="modal-form__date-label" for="departure-date">Дата выезда:</label>
+          <input class="modal-form__date-input" type="date" name="departure-date" id="departure-date">
+          <label class="modal-form__number-of-guests-label_adults" for="number-of-adults">
+            Взрослые:
+          </label>
+          <input class="modal-form__number-of-guests-input" type="number" id="number-of-adults" name="number-of-adults"
+            value="2">
+          <label class="modal-form__number-of-guests-label" for="number-of-adults">
+            Дети:
+          </label>
+          <input class="modal-form__number-of-guests-input" type="number" id="number-of-childrens"
+            name="number-of-childrens" value="2">
+          <button class="modal-form__submit-button button-second-color-theme" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
+
   </body>
 
 </html>
