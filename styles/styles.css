@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 Chrome versions,last 4 Firefox versions,last 4 Safari versions
+*/
+
 :root {
   --text-color-basic: #000000;
   --text-color-basic-disabled: rgba(0, 0, 0, 0.3);
@@ -886,7 +893,9 @@ body {
     margin: 0;
   }
 
-  appearance: textfield;
+  -webkit-appearance: textfield;
+
+          appearance: textfield;
 }
 
 .value-control {
@@ -1113,7 +1122,8 @@ body {
 
 .checkbox,
 .radio {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   position: relative;
   margin: 0;
   width: 20px;
@@ -1228,7 +1238,9 @@ body {
     margin: 0;
   }
 
-  appearance: textfield;
+  -webkit-appearance: textfield;
+
+          appearance: textfield;
 }
 
 .price-range {
@@ -1330,7 +1342,8 @@ body {
 .custom-select {
   background: url("../images/catalog/catalog-header/select-icon.svg") no-repeat right 17px center;
   padding: 5px 20px 5px 19px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 
 
   &:hover {
