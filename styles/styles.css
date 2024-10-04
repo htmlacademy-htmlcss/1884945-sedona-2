@@ -105,19 +105,21 @@ body {
 
 .button-basic-color-theme {
   color: var(--text-color-on-background);
-
   background-color: var(--buttons-color-basic);
 
   &:hover {
     background-color: var(--buttons-color-basic-hover);
+    transition: background-color 0.3s;
   }
 
   &:focus {
     background-color: var(--buttons-color-basic-hover);
+    transition: background-color 0.3s;
   }
 
   &:active {
     color: var(--text-color-on-background-small);
+    transition: color 0.3s;
   }
 
   &:disabled {
@@ -131,15 +133,19 @@ body {
 
   &:hover {
     background-color: var(--buttons-color-second-hover);
+    transition: background-color 0.3s;
   }
 
   &:focus {
     background-color: var(--buttons-color-second-hover);
+    transition: background-color 0.3s;
   }
 
   &:active {
     color: var(--text-color-on-background-active);
     background-color: var(--buttons-color-second);
+    transition: background-color 0.3s,
+                color 0.3s;
   }
 
   &:disabled {
@@ -153,14 +159,17 @@ body {
 
   &:hover {
     background-color: var(--buttons-color-select-hover);
+    transition: background-color 0.3s;
   }
 
   &:focus {
     background-color: var(--buttons-color-select-hover);
+    transition: background-color 0.3s;
   }
 
   &:active {
     color: var(--text-color-on-background-active);
+    transition: color 0.3s;
   }
 
   &:disabled {
@@ -169,22 +178,24 @@ body {
 }
 
 .button-transparent-theme {
-  background-color: transparent;
   color: var(--text-color-on-background);
+  background-color: transparent;
 
   &:hover {
     color: var(--text-color-on-background-hover);
+    transition: color 0.3s;
   }
 
   &:focus {
     color: var(--text-color-on-background);
     outline: solid 2px var(--icon-color-second);
+    transition: color 0.3s;
   }
 
   &:active {
     color: var(--text-color-on-background-active);
-    background-color: transparent;
     outline: none;
+    transition: color 0.3s;
   }
   &:disabled {
     color: var(--text-color-on-background-disabled);
@@ -200,7 +211,7 @@ body {
 
 .main-logo__img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 
   position: relative;
@@ -238,6 +249,21 @@ body {
   font-weight: 700;
   color: var(--text-color-basic);
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
 }
 
 .main-nav__link_current {
@@ -272,6 +298,19 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  &:focus {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
 }
 
 .custom-menu__favorites-btn {
@@ -285,6 +324,19 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  &:focus {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
 
   &::after {
     position: absolute;
@@ -477,7 +529,6 @@ body {
   display: block;
   max-width: 800px;
   height: auto;
-
 }
 
 .services {
@@ -608,6 +659,7 @@ body {
 
   &:hover {
     background-color: var(--forms-elements-1);
+    transition: background-color 0.3s;
   }
 
   &:focus {
@@ -666,17 +718,19 @@ body {
 
   &:hover .socials__icon {
     fill: var(--icon-color-second-hover);
+    transition: fill 0.3s;
   }
 
   &:focus .socials__icon {
     fill: var(--icon-color-second-hover);
+    transition: fill 0.3s;
   }
 
   &:active .socials__icon  {
     fill: var(--icon-color-second-active);
+    transition: fill 0.3s;
   }
 }
-
 
 .tel {
   font-size: 40px;
@@ -686,14 +740,17 @@ body {
 
   &:hover {
     color: var(--text-color-hover);
+    transition: color 0.3s;
   }
 
   &:focus {
     color: var(--text-color-hover);
+    transition: color 0.3s;
   }
 
   &:active {
     color: var(--text-color-active);
+    transition: color 0.3s;
   }
 }
 
@@ -701,14 +758,17 @@ body {
 
   &:hover .main-footer__logo {
     fill: var(--text-color-hover);
+    transition: fill 0.3s;
   }
 
   &:focus .main-footer__logo {
     fill: var(--text-color-hover);
+    transition: fill 0.3s;
   }
 
   &:active .main-footer__logo {
     fill: var(--text-color-active);
+    transition: fill 0.3s;
   }
 }
 
@@ -773,11 +833,13 @@ body {
 
     &:hover {
       background-color: var(--forms-elements-1);
+      transition: background-color 0.3s;
     }
 
     &:focus {
       background-color: var(--forms-elements-1);
       outline: solid 3px var(--icon-color-second);
+      transition: background-color 0.3s;
     }
   }
 }
@@ -929,6 +991,7 @@ body {
 
   &:hover svg {
     fill-opacity: 1;
+    transition: fill-opacity 0.3s;
   }
 
   &:focus {
@@ -936,6 +999,7 @@ body {
 
     & svg {
       fill-opacity: 1;
+      transition: fill-opacity 0.3s;
     }
   }
 
@@ -943,6 +1007,7 @@ body {
     outline: none;
     & svg {
       fill-opacity: 0.2;
+      transition: fill-opacity 0.3s;
     }
   }
 }
@@ -1049,6 +1114,7 @@ body {
 
   &:hover {
     color: var(--text-color-on-background-hover);
+    transition: color 0.3s;
   }
   &:focus {
     outline: none;
@@ -1056,6 +1122,7 @@ body {
 
   &:active {
     color: var(--text-color-on-background-active);
+    transition: color 0.3s;
   }
 
   &::before {
@@ -1074,7 +1141,6 @@ body {
   display: flex;
   column-gap: 70px;
   row-gap: 20px;
-  flex-wrap: wrap;
 }
 
 .catalog-filter__fieldset {
@@ -1225,6 +1291,7 @@ body {
 
   &:hover {
     background-color: var(--forms-elements-1);
+    transition: background-color 0.3s;
   }
 
   &:focus {
@@ -1239,7 +1306,6 @@ body {
   }
 
   -webkit-appearance: textfield;
-
           appearance: textfield;
 }
 
@@ -1345,13 +1411,14 @@ body {
   -webkit-appearance: none;
           appearance: none;
 
-
   &:hover {
     border: 2px solid var(--icon-color-second-hover);
+    transition: border 0.3s;
   }
 
   &:focus {
     border: 2px solid var(--icon-color-second-hover);
+    transition: border 0.3s;
     outline: none;
   }
 
@@ -1386,16 +1453,19 @@ body {
 
   &:hover {
     border: 2px solid var(--icon-color-basic);
+    transition: border 0.3s;
   }
 
   &:focus,
   &:focus-visible {
     border: 2px solid var(--icon-color-second-hover);
     outline: none;
+    transition: border 0.3s;
   }
 
   &:active {
     border: 2px solid var(--icon-color-basic);
+    transition: border 0.3s;
   }
 
 }

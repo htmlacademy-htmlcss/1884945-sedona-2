@@ -120,7 +120,7 @@
         </header>
         <div class='view-wrapper block-side-paddings'>
           <p class="bold-text-large">Найдено гостиниц: 38</p>
-          <select class="catalog__select custom-select" aria-label="Сортировка">
+          <select class="catalog__select custom-select" aria-label="Сортировка" id="catalog-sorting">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
@@ -228,7 +228,7 @@
         <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="get">
           <label for="email" class="visually-hidden">email</label>
           <input class="subscribe__input subscribe__input_without-background" type="email" name="email" id="email"
-            placeholder="Ваш e-mail" required>
+            placeholder="Ваш e-mail" autocomplete="on" required>
           <button class="subscribe__button button-second-color-theme" type="submit">Подписаться</button>
         </form>
       </section>
