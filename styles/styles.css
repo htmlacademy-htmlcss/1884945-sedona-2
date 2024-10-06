@@ -1395,7 +1395,7 @@ body {
   height: 49px;
   flex-shrink: 0;
 
-  font-family: "PT Sans";
+  font: inherit;
   font-size: 18px;
   line-height: 21px;
   color: var(--text-color-second);
