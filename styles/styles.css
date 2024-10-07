@@ -203,6 +203,12 @@ body {
   }
 }
 
+input {
+  &:disabled {
+    opacity: 0.1;
+  }
+}
+
 .main-header {
   display: flex;
   column-gap: 29px;
@@ -292,6 +298,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
+  min-width: 268px;
   padding-bottom: 6px; /* для компенсации margin -6px у main-header, чтобы кнопка была по цетру "видимой" области. */
 
   list-style: none;
@@ -597,15 +604,15 @@ body {
 }
 
 .services__item_housing {
-  background-image: url(../images/services/housing-icon.svg);
+  background-image: url("../images/services/housing-icon.svg");
 }
 
 .services__item_food {
-  background-image: url(../images/services/food-icon.svg);
+  background-image: url("../images/services/food-icon.svg");
 }
 
 .services__item_souvenirs {
-  background-image: url(../images/services/souvenirs-icon.svg);
+  background-image: url("../images/services/souvenirs-icon.svg");
 }
 
 
@@ -654,6 +661,7 @@ body {
   background-color: var(--background-color-under-image);
   background-image: url("../images/subscribe/subscribe-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe__form {
@@ -894,10 +902,10 @@ body {
 }
 
 .modal-form__guests-label-wrapper {
-    position: relative;
-    grid-column: 4 / 5;
-    display: flex;
-    column-gap: 10px;
+  position: relative;
+  grid-column: 4 / 5;
+  display: flex;
+  column-gap: 10px;
 }
 
 .tooltip-toggle {
@@ -972,7 +980,6 @@ body {
   }
 
   -webkit-appearance: textfield;
-
           appearance: textfield;
 }
 
@@ -984,9 +991,11 @@ body {
   width: 20px;
   height: 20px;
   padding: 0;
+
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: transparent;
 
   &:first-of-type {
     top: 50%;
@@ -1261,6 +1270,7 @@ body {
   margin-left: auto;
   display: grid;
   grid-template-columns: 143px 143px;
+  grid-template-rows: min-content auto;
   column-gap: 2px;
   row-gap: 36px;
 }
@@ -1455,7 +1465,7 @@ body {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-
+  min-width: 160px;
   margin: 0;
   padding: 0;
 
@@ -1518,6 +1528,7 @@ body {
 .card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: auto min-content min-content min-content min-content ;
   column-gap: 20px;
   width: 340px;
   padding: 20px;

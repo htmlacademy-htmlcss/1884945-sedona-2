@@ -226,13 +226,13 @@
           <label class="modal-form__date-label" for="check-in-date">Дата заезда:</label>
           <div class="modal-form__date-input-wrapper">
             <input class="modal-form__date-input" type="text" name="check-in-date" id="check-in-date"
-              placeholder="Укажите дату">
+              placeholder="Укажите дату" required>
             <span class="input-message input-message_error">Мы не можем отправить вас в прошлое.</span>
           </div>
           <label class="modal-form__date-label" for="departure-date">Дата выезда:</label>
           <div class="modal-form__date-input-wrapper">
             <input class="modal-form__date-input" type="text" name="departure-date" id="departure-date"
-              placeholder="Укажите дату">
+              placeholder="Укажите дату" required>
             <span class="input-message input-message_hint">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <label class="modal-form__guests-label" for="adults">
@@ -245,7 +245,7 @@
                 <path d="M0 0L0 2L14 2V0L0 0Z" fill="" />
               </svg>
             </button>
-            <input class="modal-form__guests-input" type="number" id="adults" name="adults" value="2">
+            <input class="modal-form__guests-input" type="number" id="adults" name="adults" value="2" required>
             <button class="value-control" onclick="adults.stepUp()" title="Увеличить значение"
               aria-label="Увеличить значение" type="button">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
