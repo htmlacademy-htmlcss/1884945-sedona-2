@@ -203,12 +203,6 @@ body {
   }
 }
 
-input {
-  &:disabled {
-    opacity: 0.1;
-  }
-}
-
 .main-header {
   display: flex;
   column-gap: 29px;
@@ -689,6 +683,10 @@ input {
   &:focus {
     outline: solid 3px var(--icon-color-second);
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .subscribe__input_without-background {
@@ -864,6 +862,10 @@ input {
       background-color: var(--forms-elements-1);
       outline: solid 3px var(--icon-color-second);
       transition: background-color 0.3s;
+    }
+
+    &:disabled {
+      opacity: 0.3;
     }
   }
 }
@@ -1245,6 +1247,10 @@ input {
     width: 20px;
     height: 20px;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .checkbox {
@@ -1325,6 +1331,10 @@ input {
 
   &:focus {
     outline: solid 3px var(--icon-color-second);
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   /* Убирает стрелки на инпуте тип number */
