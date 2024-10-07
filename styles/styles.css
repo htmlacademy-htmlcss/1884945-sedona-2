@@ -1604,7 +1604,7 @@ body {
   margin: 0;
   align-self: center;
 
-  background-image: url(../images/catalog/cards/star-icon.svg);
+  background-image: url("../images/catalog/cards/star-icon.svg");
   background-repeat: space;
   background-position: 0 center;
   background-size: 19px auto;
