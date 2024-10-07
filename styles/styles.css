@@ -29,6 +29,7 @@
   --background-color-base: #ffffff;
   --background-color-substrate: #f2f2f2;
   --background-color-basic: #82b3d3;
+  --background-color-under-image: #60a8d8;
   --background-color-second-1: rgba(131, 179, 211, 0.12);
   --background-color-second-2: rgba(131, 179, 211, 0.2);
   --icon-color-basic: #000000;
@@ -216,6 +217,21 @@ body {
 
   position: relative;
   z-index: 1;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+
+  &:focus {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+  }
 }
 
 .main-nav {
@@ -385,7 +401,7 @@ body {
   padding-top: 51px;
   min-height: 485px;
 
-  background-color: var(--background-color-second-2);
+  background-color: var(--background-color-under-image);
   background-image: url("../images/banner/banner-background.jpg");
   background-repeat: no-repeat;
 }
@@ -635,7 +651,7 @@ body {
 }
 
 .subscribe_with-background {
-  background-color: var(--background-color-second-2);
+  background-color: var(--background-color-under-image);
   background-image: url("../images/subscribe/subscribe-background.jpg");
   background-repeat: no-repeat;
 }
@@ -1072,7 +1088,7 @@ body {
   padding-bottom: 35px;
   min-height: 412px;
 
-  background-color: var(--background-color-basic);
+  background-color: var(--background-color-under-image);
   background-image: url("../images/catalog/catalog-header/catalog-header-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1173,6 +1189,8 @@ body {
   font-size: 18px;
   line-height: 23px;
 
+  cursor: pointer;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -1198,6 +1216,7 @@ body {
 
   border-radius: 4px;
   background-color: var(--background-color-base);
+  cursor: pointer;
 
   &:focus,
   &:focus-visible {
@@ -1332,7 +1351,9 @@ body {
   width: 20px;
   height: 20px;
   padding: 0;
+
   background-color: var(--background-color-base);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 
@@ -1403,6 +1424,7 @@ body {
   background-color: transparent;
   border: 2px solid var(--forms-elements-1);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .custom-select {
